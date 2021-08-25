@@ -5,12 +5,15 @@
 /* --------------- */
 body{
 	font-family: 'Lato'; 
+    overflow-x: hidden;
 }
 a{
     color: black;
 }
 /* --------------- */
 .wrapper{
+    // display: flex;
+    // flex-direction: column;
     overflow: hidden;
     max-height: 100%; 
 }
@@ -153,9 +156,6 @@ a{
                 &{
                     padding: 70px 0 85px 0;
                 }
-                &_text{
-                    font-size: 16px;
-                }
             }
     
             &_row {
@@ -188,6 +188,11 @@ a{
                     padding: 50px 35px 45px 35px;
                 }
             }
+            @media (max-width: 1100px){
+                &_body{
+                    padding: 55px 45px 50px 45px;
+                }
+            }
     
             &_column {
                 flex: 0 1 33.333%;
@@ -201,11 +206,6 @@ a{
     
             &_body {
                 padding: 70px 65px 55px 65px;
-            }
-            @media (max-width: 1100px){
-                &_body{
-                    padding: 55px 45px 50px 45px;
-                }
             }
     
             &_icon {
@@ -262,11 +262,6 @@ a{
 
             &_body {
                 padding: 70px 65px 55px 65px;
-            }
-            @media (max-width: 1100px){
-                &_body{
-                    padding: 55px 45px 50px 45px;
-                }
             }
 
             &_icon {
@@ -327,12 +322,7 @@ a{
     
             &_body {
                 padding: 70px 65px 55px 65px;
-            } 
-            @media (max-width: 1100px){
-                &_body{
-                    padding: 55px 45px 50px 45px;
-                }
-            }           
+            }            
     
             &_icon {
                 margin-bottom: 20px;
@@ -374,14 +364,6 @@ a{
             @media (max-width: 767px){
                 &_body{
                     padding: 80px 0 95px 0;
-                }
-            }
-            @media (max-width: 1100px){
-                &_body{
-                    padding: 90px 0 105px 0;
-                }
-                &_text{
-                    font-size: 18px;
                 }
             }
     
@@ -639,16 +621,6 @@ a{
 
         }
 }
-/*---------------- */
 
-.header_about {
-}
-.fullscreen{
-    &_bg{
-        background-color: #353738;
-    }
-}
-.content {
-}
-.footer {
-}
+
+/* --------------- */
