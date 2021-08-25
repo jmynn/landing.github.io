@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Ubuntu:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* --------------- */
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ibg img {
+  display: none;
+}
+
+/* --------------- */
+body {
+  font-family: 'Playfair Display';
+  height: 100%;
+}
+
+/* --------------- */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+}
+
+/* --------------- */
+.subtitle {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #b4ad9e;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #626262;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #626262;
+}
+
+.link {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #b4ad9e;
+}
+
+/* --------------- */
+.fullscreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../img/h.png");
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+.fullscreen_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0 auto;
+  max-width: 1100px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.fullscreen_title {
+  font-family: 'Inconsolata';
+  font-size: 50px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+
+.block_img {
+  margin-bottom: 80px;
+}
+.block_subtitle {
+  margin-bottom: 25px;
+}
+.block_title {
+  margin-bottom: 30px;
+}
+.block_text {
+  margin-bottom: 50px;
+}
+
+.kart {
+  margin-top: 80px;
+}
+.kart_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.kart_body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 420px;
+          flex: 0 0 420px;
+  margin-bottom: 100px;
+  padding: 0 30px;
+}
+.kart_img {
+  margin-bottom: 30px;
+}
+.kart_subtitle {
+  margin-bottom: 25px;
+}
+.kart_title {
+  margin-bottom: 30px;
+}
+
+/* --------------- */
+.footer {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+}
+.footer_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer_second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer_list li:last-child {
+  margin-left: 15px;
+}
+.footer_text {
+  margin-right: 12.5px;
+}
+.footer_social img {
+  margin: 0 7.5px;
+}

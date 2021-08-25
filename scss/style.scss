@@ -12,10 +12,8 @@ a{
 }
 /* --------------- */
 .wrapper{
-    // display: flex;
-    // flex-direction: column;
     overflow: hidden;
-    max-height: 100%; 
+    min-height: 100%; 
 }
 .container{
  	max-width: 1130px;  
@@ -180,20 +178,7 @@ a{
             &_row {
                 display: flex;
             }
-            @media (max-width: 767px){
-                &_row{
-                    flex-direction: column;
-                }
-                &_body{
-                    padding: 50px 35px 45px 35px;
-                }
-            }
-            @media (max-width: 1100px){
-                &_body{
-                    padding: 55px 45px 50px 45px;
-                }
-            }
-    
+                
             &_column {
                 flex: 0 1 33.333%;
                 &_b{
@@ -207,7 +192,21 @@ a{
             &_body {
                 padding: 70px 65px 55px 65px;
             }
-    
+            
+            @media (max-width: 767px){
+                &_row{
+                    flex-direction: column;
+                }
+                &_body{
+                    padding: 50px 35px 45px 35px;
+                }
+            }
+            @media (max-width: 1100px){
+                &_body{
+                    padding: 55px 45px 50px 45px;
+                }
+            }
+
             &_icon {
                 margin-bottom: 26px;
             }
@@ -239,15 +238,7 @@ a{
             &_row {
                 display: flex;
             }
-            @media (max-width: 767px){
-                &_row{
-                    flex-direction: column;
-                }
-                &_body{
-                    padding: 50px 35px 45px 35px;
-                }
-            }
-
+            
             &_column {
                 flex: 0 1 33.333%;
                 order: 1;
@@ -262,6 +253,15 @@ a{
 
             &_body {
                 padding: 70px 65px 55px 65px;
+            }
+
+            @media (max-width: 767px){
+                &_row{
+                    flex-direction: column;
+                }
+                &_body{
+                    padding: 50px 35px 45px 35px;
+                }
             }
 
             &_icon {
@@ -296,6 +296,15 @@ a{
             &_row {
                 display: flex;
             }
+                
+            &_column {
+                flex: 0 1 33.333%;
+            }
+    
+            &_body {
+                padding: 70px 65px 55px 65px;
+            }  
+            
             @media (max-width: 767px){
                 &_row{
                     flex-direction: column;
@@ -315,14 +324,6 @@ a{
                     padding: 50px 35px 45px 35px;
                 }
             }
-    
-            &_column {
-                flex: 0 1 33.333%;
-            }
-    
-            &_body {
-                padding: 70px 65px 55px 65px;
-            }            
     
             &_icon {
                 margin-bottom: 20px;
@@ -390,6 +391,14 @@ a{
             &_row {
                 display: flex;
             }
+                
+            &_column {
+                flex: 0 1 16.666%;
+                &_b{
+                    flex: 0 1 33.333%;
+                }                
+            }
+
             @media (max-width: 767px){
                 &_row{
                     flex-direction: column;
@@ -397,13 +406,6 @@ a{
                 &_column:nth-child(2), &_column:nth-child(3){
                     display: none;
                 }          
-            }
-    
-            &_column {
-                flex: 0 1 16.666%;
-                &_b{
-                    flex: 0 1 33.333%;
-                }                
             }
     
             &_block {
@@ -498,6 +500,7 @@ a{
                 color: #ffffff;
                 margin-left: 5px;
             }
+
             @media (max-width: 767px){
                 &_submit{
                     display: block;
@@ -600,6 +603,14 @@ a{
                 font-style: italic;
                 color: #848789
             }
+            @media (max-width:767px){
+                &_address{
+                    font-size: 10px;
+                    p:first-child{
+                        font-size: 13px;
+                    }
+                }
+            }
 
             &_social{
                 img{
@@ -621,6 +632,4 @@ a{
 
         }
 }
-
-
 /* --------------- */
